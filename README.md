@@ -1,4 +1,4 @@
-# 🚀 Automated CI/CD Pipeline for AWS EKS
+# Automated CI/CD Pipeline for AWS EKS
 
 ## 📖 Project Overview
 This project demonstrates a fully automated DevOps pipeline using **GitHub Actions**. The goal is to eliminate manual deployments by automatically building, testing, and deploying a Dockerized application to an AWS EKS cluster whenever code is pushed to the repository.
