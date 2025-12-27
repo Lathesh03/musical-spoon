@@ -24,4 +24,3 @@ jobs:
         context: .
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/project4-app:latest
-# triggering new build
