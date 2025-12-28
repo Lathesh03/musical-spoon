@@ -1,20 +1,33 @@
-# Automated CI/CD Pipeline for AWS EKS
+# 🎵 Musical Spoon: Flask on AWS EKS
+
+A cloud-native Python Flask application containerized with Docker and orchestrated using Kubernetes on AWS Elastic Kubernetes Service (EKS).
+
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Docker](https://img.shields.io/badge/Docker-Container-blue)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-AWS%20EKS-orange)
 
 ## 📖 Project Overview
-This project demonstrates a fully automated DevOps pipeline using **GitHub Actions**. The goal is to eliminate manual deployments by automatically building, testing, and deploying a Dockerized application to an AWS EKS cluster whenever code is pushed to the repository.
+This project demonstrates a complete DevOps workflow for deploying a microservice:
+1.  **Application:** A Python Flask web application.
+2.  **Containerization:** Dockerized for portability.
+3.  **Orchestration:** Deployed on a 2-node AWS EKS Cluster.
+4.  **Networking:** Exposed to the internet via an AWS Classic Load Balancer (CLB).
 
-## 🏗️ Architecture
-* **Source Control:** GitHub
-* **CI/CD Orchestrator:** GitHub Actions
+## 🛠️ Technologies Used
+* **Language:** Python 3 (Flask)
 * **Containerization:** Docker
-* **Registry:** Docker Hub (or AWS ECR)
-* **Orchestration:** Kubernetes (AWS EKS)
+* **Orchestration:** Kubernetes (K8s)
+* **Cloud Provider:** AWS (EKS, EC2, ELB)
+* **Infrastructure Tools:** `eksctl`, `kubectl`
 
-## 🛠️ Implementation Steps (In Progress)
-- [ ] **Phase 1:** Dockerize a simple Python/Node.js application.
-- [ ] **Phase 2:** Create a GitHub Actions workflow (`.github/workflows/deploy.yml`).
-- [ ] **Phase 3:** Configure AWS Credentials & Secrets in GitHub.
-- [ ] **Phase 4:** Automate the deployment to EKS using `kubectl` inside the pipeline.
+## 🚀 How to Run
 
-## 📸 Proof of Automation
-*(Screenshots of green pipeline runs will go here)*
+### 1. Prerequisites
+* AWS CLI configured
+* Docker installed
+* `kubectl` and `eksctl` installed
+
+### 2. Build the Docker Image
+```bash
+docker build -t your-dockerhub-username/musical-spoon:latest .
+docker push your-dockerhub-username/musical-spoon:latest
