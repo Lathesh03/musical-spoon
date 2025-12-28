@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# AWS Installer files (Cleanup)
+aws/
+awscliv2.zip
+
+# IDE settings (Optional but good practice)
+.vscode/
+.idea/
+.DS_Store
+
+# OS generated files
+Thumbs.db
