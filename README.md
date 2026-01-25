@@ -1,4 +1,4 @@
-# Musical Spoon: Flask on AWS EKS
+# aws-eks-terraform-cluster: Flask on AWS EKS
 
 A cloud-native Python Flask application containerized with Docker and orchestrated using Kubernetes on AWS Elastic Kubernetes Service (EKS).
 
