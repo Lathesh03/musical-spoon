@@ -1,4 +1,4 @@
-# aws-eks-terraform-cluster: Flask on AWS EKS
+# k8s-infrastructure-iac: Flask on AWS EKS
 
 A cloud-native Python Flask application containerized with Docker and orchestrated using Kubernetes on AWS Elastic Kubernetes Service (EKS).
 
